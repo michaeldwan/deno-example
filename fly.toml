@@ -1,3 +1,4 @@
 [build]
 
   builder = "deno"
+  entry_file = "./src/mod.ts"
