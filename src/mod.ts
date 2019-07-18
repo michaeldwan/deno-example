@@ -6,7 +6,7 @@ console.log("listening on", PORT);
 
 (async () => {
   for await (const req of serve(`:${PORT}`)) {
-    const body = new TextEncoder().encode(`Hello!\nThe current time is ${new Date()}`);
+    const body = new TextEncoder().encode(`HELLO THIS IS A NEW !\nThe current time is ${new Date()}`);
     req.respond({ body });
     console.log(`${req.method} ${req.url}`)
   }
